@@ -1,0 +1,35 @@
+- name: javac
+  weight: 50
+  # weight: 10
+  condition: 40
+  context: Java compilation
+  configuration:
+# - name: rng
+#   weight: 40
+#   condition: 10
+#   context: Random mark
+#   depends-on:
+#     - 'javac'
+#     - 'junit'
+#   configuration:
+- name: junit
+  weight: 50
+  condition: 40
+  context: JUnit tests
+  depends-on:
+    - javac
+  configuration:
+    test_files:
+      repository: this
+      branch: master
+      sha: latest
+
+      # repository: git@github.com:automated-assessment/coursework_3_tests.git
+      # branch: master
+      # sha: 8f5fb0f4c8bffa355a3a34ba84916cf456b6d5e8
+
+      # repository: https://github.com/mpoc/coursework_3_tests
+      # branch: master
+      # sha: latest
+    timeout: 1m
+    

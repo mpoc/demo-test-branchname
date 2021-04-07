@@ -1,0 +1,26 @@
+title: Coursework 2
+description: >
+  For this coursework, you will have to implement a reinforcement learning
+  algorithm. Your code will again be controlling Pacman, in the classic game,
+  and the reinforcement learning algorithm will be helping Pacman choose how to
+  move. Your reinforcement learning algorithm should be able, once it has done
+  its learning, to be able to play a pretty good game, and its ability to play a
+  good game will be part of what we assess.
+start: "2021-02-01T15:57:00.000Z"
+deadline: "2021-05-08T15:57:00.000Z"
+allow_late: true
+late_cap: 40
+allow_zip: true
+allow_git: true
+allow_ide: true
+max_attempts: 0
+latedeadline: "2021-05-09T15:57:00.000Z"
+feedback_only: false
+is_unique: false
+# uat_parameters:
+#   - name: biggus dickus
+#     type: int
+#     construction_constraints: ''
+#   - name: sekond parametur
+#     type: string
+#     construction_constraints: ''
